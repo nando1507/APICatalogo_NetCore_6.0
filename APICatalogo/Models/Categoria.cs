@@ -15,11 +15,11 @@ public class Categoria
     public int CategoriaId { get; set; }
 
     [Required]
-    [StringLength(200)]
+    [StringLength(80)]
     public string? Nome { get; set; }
 
     [Required]
-    [StringLength(200)]
+    [StringLength(300)]
     public string? ImagemUrl { get; set; }
 
     public ICollection<Produto>? Produtos { get; set; }
